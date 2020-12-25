@@ -1,0 +1,9 @@
+<script>
+    !function(array, list) {
+        if (array.pop() == list) {
+            array.pop();
+        }
+        array.push(list);
+        location.replace(array.join("/"));
+    }(location.pathname.split("/"), "README.txt")
+</script>
